@@ -1,4 +1,5 @@
 class Question:
-    def __int__(self, t, ans):
-        self.text = t
-        self.answer = ans
+
+    def __init__(self, q_text, q_answer):
+        self.text = q_text
+        self.answer = q_answer
