@@ -12,7 +12,11 @@ for question in question_data:
     Question_bank.append(new_question)
 
 quiz = QuizBrain(Question_bank)
+score = 0
 
 while quiz.still_has_questions():
     quiz.next_question()
+
+print("You have completed the quiz")
+print(f"Your Total Score: {quiz.score}/{quiz.question_number}")
 
